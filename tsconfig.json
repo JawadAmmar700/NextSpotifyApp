@@ -15,6 +15,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/api/auth/[...nextauth].js",
+    "pages/api/getToken.js",
+    "pages/index.tsx",
+    "components/Player.tsx"
+  ],
   "exclude": ["node_modules"]
 }

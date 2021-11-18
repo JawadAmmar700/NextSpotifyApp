@@ -8,15 +8,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
+    "axios": "^0.24.0",
+    "buffer": "^6.0.3",
     "next": "12.0.3",
+    "next-auth": "^4.0.0-beta.6",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-audio-player": "^0.17.0",
+    "react-dom": "17.0.2",
+    "react-spotify-player": "^1.0.4",
+    "recoil": "^0.5.2",
+    "spotify-web-api-node": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
+    "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"
   }
 }
