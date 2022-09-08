@@ -47,6 +47,7 @@ export default NextAuth({
     SpotifyProvider({
       clientId: process.env.SPOTIFY_ID,
       clientSecret: process.env.SPOTIFY_SECRET,
+      
       // scope:
       //   "streaming user-read-email user-read-private user-read-playback-state user-modify-playback-state",
       authorization:

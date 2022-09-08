@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react"
-import { getNewReleases } from "../lib/queries/getNewReleases"
+import React, { useEffect, useState } from "react";
+import { getNewReleases } from "../lib/queries/getNewReleases";
 
 const NewReleases = ({ token }) => {
-  console.log(token)
-  const [newReleases, setNewReleases] = useState<any>()
+  const [newReleases, setNewReleases] = useState<any>();
 
   useEffect(() => {
     if (token) {
-      getNewReleases(token).then(data => {
-        setNewReleases(data.data.albums.items)
-      })
+      getNewReleases(token).then((data) => {
+        setNewReleases(data.data.albums.items);
+      });
     }
-  }, [token])
+  }, [token]);
 
   return (
     <div className="px-4 mt-6">
@@ -42,7 +41,7 @@ const NewReleases = ({ token }) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default NewReleases
+export default NewReleases;

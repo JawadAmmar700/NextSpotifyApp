@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react"
-import { getPlaylists } from "../lib/queries/getPlaylists"
+import React, { useEffect, useState } from "react";
+import { getPlaylists } from "../lib/queries/getPlaylists";
 
 const PlayList = ({ token }) => {
-  const [playlist, setPlayList] = useState<any>()
+  const [playlist, setPlayList] = useState<any>();
 
   useEffect(() => {
     if (token) {
-      getPlaylists(token).then(data => {
-        setPlayList(data.data.playlists.items.slice(0, 5))
-        console.log(data)
-      })
+      getPlaylists(token).then((data) => {
+        setPlayList(data.data.playlists.items.slice(0, 5));
+      });
     }
-  }, [token])
+  }, [token]);
 
   return (
     <div className="px-4">
@@ -45,7 +44,7 @@ const PlayList = ({ token }) => {
           ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PlayList
+export default PlayList;
